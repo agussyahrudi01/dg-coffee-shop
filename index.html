@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DG Coffee Shop POS - Aplikasi Kasir Kopi Premium</title>
+    <meta name="description" content="Aplikasi kasir modern untuk DG Coffee Shop dengan fitur lengkap dan sistem manajemen terintegrasi">
+    <meta name="keywords" content="DG coffee shop, kasir, POS, kopi premium, aplikasi">
+    <meta property="og:title" content="DG Coffee Shop POS">
+    <meta property="og:description" content="Aplikasi kasir modern untuk DG Coffee Shop">
+    <meta name="twitter:title" content="DG Coffee Shop POS">
+    <meta name="twitter:description" content="Aplikasi kasir modern untuk DG Coffee Shop">
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#f59e0b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Coffee Shop POS">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <script>const ChartJS = window.Chart;</script>
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        /* Define custom theme values like colors, spacing, fonts, shadow etc. */
+    }
+
+    @layer base {
+        /* Add or override base styles for HTML elements (e.g., body, h1, p) */
+    }
+
+    @layer components {
+        /* Create custom component classes (e.g., buttons, cards, modals) */
+    }
+
+    @layer utilities {
+        /* Define custom utility classes (e.g., .text-shadow, .skew-10) */
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/ProductCard.js"></script>
+    <script type="text/babel" src="components/Cart.js"></script>
+    <script type="text/babel" src="components/CategoryFilter.js"></script>
+    <script type="text/babel" src="components/Checkout.js"></script>
+    <script type="text/babel" src="components/SalesReport.js"></script>
+    <script type="text/babel" src="components/StockManagement.js"></script>
+    <script type="text/babel" src="components/CustomerLoyalty.js"></script>
+    <script type="text/babel" src="components/Dashboard.js"></script>
+    <script type="text/babel" src="components/PaymentReceipt.js"></script>
+    <script type="text/babel" src="components/StockNotification.js"></script>
+    <script type="text/babel" src="components/SupplierManagement.js"></script>
+    <script type="text/babel" src="components/PurchaseOrders.js"></script>
+    <script type="text/babel" src="components/FinancialModule.js"></script>
+    <script type="text/babel" src="components/QRMembershipScanner.js"></script>
+    <script type="text/babel" src="components/TableReservation.js"></script>
+    <script type="text/babel" src="components/MenuRecommendation.js"></script>
+    <script type="text/babel" src="components/EmployeeManagement.js"></script>
+    <script type="text/babel" src="components/PromoManagement.js"></script>
+    <script type="text/babel" src="components/InventoryAlert.js"></script>
+
+    <script type="text/babel" src="utils/formatCurrency.js"></script>
+    <script type="text/babel" src="utils/loyaltySystem.js"></script>
+    <script type="text/babel" src="utils/exportUtils.js"></script>
+    <script type="text/babel" src="utils/qrCodeUtils.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
